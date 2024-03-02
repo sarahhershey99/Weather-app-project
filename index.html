@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Weather App Project</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <main>
+        <form id="inputContainer">
+            <label for="searchInput">Weather Data Search</label>
+            <div id="latInput">
+                <label for="lat">Latitude</label>
+            <input type="text" id="lat">
+            </div>
+            <div id="lonInput">
+                <label for="lon">Longitude</label>
+            <input type="text" id="lon">
+            </div>
+            <div>
+            <button type="button" id="searchBtn">Search</button>
+            </div>
+        </form>
+        <div id="infoDisplay">
+            <label for="infoDisplay">Weather Info</label>
+        </div>
+        <div class="selectedAreas"></div>
+        <div>
+            <button type="button" class="saveBtn">Save</button>
+            <button type="button" class="removeBtn">Remove</button>
+        </div>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
