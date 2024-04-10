@@ -6,30 +6,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
 </head>
 <body>
     <main>
         <form id="inputContainer">
-            <label for="searchInput">Weather Data Search</label>
-            <div id="latInput">
-                <label for="lat">Latitude</label>
-            <input type="text" id="lat">
+            <p> US Current Weather Data Search</p>
+            <div id="cityDiv">
+                <label> City
+            <input type="text" id="city">
+        </label>
             </div>
-            <div id="lonInput">
-                <label for="lon">Longitude</label>
-            <input type="text" id="lon">
+            <div id="stateDiv">
+            <label>State
+            <input type="text" id="state">
+        </label>
             </div>
             <div>
             <button type="button" id="searchBtn">Search</button>
             </div>
         </form>
-        <div id="infoDisplay">
-            <label for="infoDisplay">Weather Info</label>
+        <div id="savedAreas">
+            <p>Searched Locations</p>
+            <ul id="selectedAreas">
+
+            </ul>
         </div>
-        <div class="selectedAreas"></div>
+        <div id="infoDisplay"></div>
         <div>
-            <button type="button" class="saveBtn">Save</button>
-            <button type="button" class="removeBtn">Remove</button>
+            <button type="button" id="removeBtn">Clear</button>
+            <button type="button" id="displayF">Fahrenheit</button>
+            <button type="button" id="displayC">Celsius</button>
         </div>
     </main>
     <script src="index.js"></script>
